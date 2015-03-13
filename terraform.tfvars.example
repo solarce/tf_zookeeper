@@ -1,0 +1,28 @@
+//aws provider variables
+aws_access_key = "XXXX"
+aws_secret_key = "XXXX"
+aws_region = "us-west-2"
+
+//tf_zookeeper module
+mytag = "stage0"
+
+//Subnets
+subnet_az1 = "subnet-3c3dce59"
+subnet_az2 = "subnet-f57b6881"
+
+//SG module
+vpc_id = "vpc-26a44a43"
+security_group_name = "zk-stage0"
+source_cidr_block = "10.0.0.0/8"
+
+//ASG module
+ami_id = "ami-35143705"
+zk_number_of_instances = 3
+minimum_number_of_instances = 0
+instance_type = "m3.large"
+health_check_type = "EC2"
+iam_instance_profile = "arn:aws:iam::XXXXXXXXXXXX:instance-profile/chef-node"
+asg_name = "zk"
+lc_name = "zk"
+key_name = "rundeck-stage"
+user_data = "/tmp/bootstrap_stage0_zk_default.sh"
