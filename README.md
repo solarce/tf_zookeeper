@@ -1,7 +1,9 @@
 tf_zookeeper
 ============
 
-A Terraform "service" template for a zookeeper cluster
+A Terraform "service" template for a zookeeper cluster.
+
+You can also refer to my [example of running `plan` on this template](https://gist.github.com/solarce/b77110786e5dbd5dc2b9)
 
 Template Input Variables
 ------------------------
